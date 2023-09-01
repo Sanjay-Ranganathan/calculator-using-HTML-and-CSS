@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<title>My calculator</title>
+<link rel="stylesheet" type="text/css" href="Calculator-CSS.css">
+<body>
+    <form>
+        <div class="calc">
+            <div class="display">
+                <input type="text" name="di">
+                </div>
+        <div class="bts">
+        <div class="l1">
+            <input type="button" value="AC" style="width: 153px;" onclick="di.value =''">
+            <input type="button" value="DEL" onclick="di.value =di.value.toString().slice(0,-1)">
+            <input type="button" value="/" onclick="di.value +='/'">
+        </div>
+        <div class="l2">
+            <input type="button" value="7" onclick="di.value +='7'">
+            <input type="button" value="8" onclick="di.value +='8'">
+            <input type="button" value="9" onclick="di.value +='9'">
+            <input type="button" value="+" onclick="di.value +='+'">
+        </div>
+        <div class="l3">
+            <input type="button" value="6" onclick="di.value +='6'">
+            <input type="button" value="5" onclick="di.value +='5'">
+            <input type="button" value="4" onclick="di.value +='4'">
+            <input type="button" value="-" onclick="di.value +='-'">
+        </div>
+        <div class="l4">
+            <input type="button" value="1" onclick="di.value +='1'">
+            <input type="button" value="2" onclick="di.value +='2'">
+            <input type="button" value="3" onclick="di.value +='3'">
+            <input type="button" value="*" onclick="di.value +='*'">
+        </div>
+        <div class="l5">
+            <input type="button" value="00" onclick="di.value +='00'">
+            <input type="button" value="0" onclick="di.value +='0'">
+            <input type="button" value="=" style="width: 153px;" onclick="di.value=eval(di.value)">
+        </div>
+        </div>
+        </div>
+    </form>
+</body>
